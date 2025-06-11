@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workshop Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-box">
+      <h1>Mukundha<br>Full Stack Workshop</h1>
+      <p>We hope you enjoyed the session! Please take a moment to share your feedback using the form beside. Your inputs help us improve and grow. 🚀</p>
+
+      <div class="photo-box">
+        <img src="iconmunji.jpg" alt="Mukundha's Photo">
+      </div>
+    </div>
+
+    <div class="right-box">
+      <form id="feedback">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="msg">Your Feedback</label>
+        <textarea id="msg" rows="3" required></textarea>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+
+      <div id="form-result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

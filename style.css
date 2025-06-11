@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #a900b8, #350b63);
+  padding: 40px 20px;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+  animation: fadeIn 1s ease;
+}
+
+.left-box {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  animation: slideInLeft 1s ease;
+}
+
+.left-box h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.left-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.right-box {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: black;
+  animation: slideInRight 1s ease;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #a900b8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #9100a1;
+  transform: scale(1.03);
+}
+
+#form-result {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #e9fbe9;
+  border-left: 4px solid #4CAF50;
+  color: #333;
+  font-size: 14px;
+  border-radius: 8px;
+  display: none;
+}
+
+.photo-box {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.photo-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 20px 5px #fff200;
+  transition: transform 0.3s ease;
+}
+
+.photo-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px 7px #ffea00;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  0% { transform: translateX(-50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
